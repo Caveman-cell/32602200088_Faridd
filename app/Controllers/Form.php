@@ -2,9 +2,9 @@
 
 namespace App\Controllers;
 
-class Form extends BaseController
+class Form extends BaseController 
 {
-    public function index()
+    public function index() 
     {
         return view('form');
     }

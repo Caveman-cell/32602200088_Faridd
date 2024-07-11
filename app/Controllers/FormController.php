@@ -2,11 +2,9 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controllers;
+use Codeigniter\Controller;
 
-
-class FormController extends BaseController
-{
+class FormController extends BaseController {
     public function submit()
     {
         $nama = $this->request->getPost('nama');
@@ -17,8 +15,5 @@ class FormController extends BaseController
         $asisten = $this->request->getPost('asisten');
 
         return view('result', compact('nama', 'nim', 'kelas', 'matakuliah', 'dosen', 'asisten'));
-
     }
 }
-
-?>
